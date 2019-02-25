@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="TkQ-E3-Gz7" customClass="MarkerInfoWindow" customModule="Curah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="289" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7r-q5-urx">
+                    <rect key="frame" x="0.0" y="0.0" width="289" height="100"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapBackground" translatesAutoresizingMaskIntoConstraints="NO" id="PWy-Hk-2a3">
+                            <rect key="frame" x="55" y="0.0" width="234" height="107"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcf-3t-Mz5">
+                            <rect key="frame" x="75" y="66.5" width="29" height="22"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                            <color key="textColor" red="0.80784313730000001" green="0.85490196080000003" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(2 miles away)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuk-fv-dca">
+                            <rect key="frame" x="75" y="45" width="74.5" height="16.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FbF-77-MD9" customClass="FloatRatingView" customModule="FloatRatingView">
+                            <rect key="frame" x="138" y="23" width="75" height="15"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75" id="uJM-pV-P2r"/>
+                                <constraint firstAttribute="height" constant="15" id="uun-9G-8dm"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="minRating">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maxRating">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="minImageSize">
+                                    <size key="value" width="0.0" height="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="editable" value="NO"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="yellow_star"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="grey_star"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kim Joy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cex-3g-tJC">
+                            <rect key="frame" x="75" y="15" width="58" height="30"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hP-Nj-zcR">
+                            <rect key="frame" x="214" y="45" width="60" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="A7g-NU-QfD"/>
+                                <constraint firstAttribute="height" constant="45" id="Dfc-9e-VMB"/>
+                            </constraints>
+                            <state key="normal" image="chat_but">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                    <integer key="value" value="13"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FU-X6-EDz">
+                            <rect key="frame" x="75" y="15" width="58" height="30"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="FbF-77-MD9" firstAttribute="leading" secondItem="Cex-3g-tJC" secondAttribute="trailing" constant="5" id="8Le-jY-pK3"/>
+                        <constraint firstItem="Cex-3g-tJC" firstAttribute="leading" secondItem="PWy-Hk-2a3" secondAttribute="leading" constant="20" id="9bD-Ii-qwb"/>
+                        <constraint firstItem="8FU-X6-EDz" firstAttribute="top" secondItem="Cex-3g-tJC" secondAttribute="top" id="AMW-HT-N5d"/>
+                        <constraint firstItem="PWy-Hk-2a3" firstAttribute="leading" secondItem="y7r-q5-urx" secondAttribute="leading" constant="55" id="BbO-4h-Kmp"/>
+                        <constraint firstAttribute="trailing" secondItem="6hP-Nj-zcR" secondAttribute="trailing" constant="15" id="NNt-6S-kwf"/>
+                        <constraint firstItem="Cex-3g-tJC" firstAttribute="top" secondItem="y7r-q5-urx" secondAttribute="top" constant="15" id="Ogg-Up-v6Y"/>
+                        <constraint firstItem="8FU-X6-EDz" firstAttribute="leading" secondItem="Cex-3g-tJC" secondAttribute="leading" id="QJm-IL-vqK"/>
+                        <constraint firstItem="8FU-X6-EDz" firstAttribute="bottom" secondItem="Cex-3g-tJC" secondAttribute="bottom" id="Rxe-I0-sHj"/>
+                        <constraint firstItem="8FU-X6-EDz" firstAttribute="trailing" secondItem="Cex-3g-tJC" secondAttribute="trailing" id="YrI-iA-9LE"/>
+                        <constraint firstItem="uuk-fv-dca" firstAttribute="top" secondItem="Cex-3g-tJC" secondAttribute="bottom" id="i3x-Rl-48Q"/>
+                        <constraint firstItem="qcf-3t-Mz5" firstAttribute="top" secondItem="uuk-fv-dca" secondAttribute="bottom" constant="5" id="iFq-Bx-vcY"/>
+                        <constraint firstAttribute="trailing" secondItem="PWy-Hk-2a3" secondAttribute="trailing" id="jJX-p1-rqG"/>
+                        <constraint firstItem="uuk-fv-dca" firstAttribute="leading" secondItem="Cex-3g-tJC" secondAttribute="leading" id="lKg-Zs-Ijk"/>
+                        <constraint firstItem="FbF-77-MD9" firstAttribute="centerY" secondItem="Cex-3g-tJC" secondAttribute="centerY" id="lKt-wH-GSW"/>
+                        <constraint firstAttribute="bottom" secondItem="6hP-Nj-zcR" secondAttribute="bottom" constant="10" id="m0t-US-1BS"/>
+                        <constraint firstAttribute="bottom" secondItem="PWy-Hk-2a3" secondAttribute="bottom" constant="-7" id="mjb-ZG-zUG"/>
+                        <constraint firstItem="PWy-Hk-2a3" firstAttribute="top" secondItem="y7r-q5-urx" secondAttribute="top" id="nc8-7t-rb0"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FbF-77-MD9" secondAttribute="trailing" constant="10" id="v37-FX-Aay"/>
+                        <constraint firstItem="qcf-3t-Mz5" firstAttribute="leading" secondItem="uuk-fv-dca" secondAttribute="leading" id="xh5-rq-HDY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="y7r-q5-urx" secondAttribute="trailing" id="LTu-XN-138"/>
+                <constraint firstAttribute="bottom" secondItem="y7r-q5-urx" secondAttribute="bottom" id="UdG-gU-kXH"/>
+                <constraint firstItem="y7r-q5-urx" firstAttribute="leading" secondItem="TkQ-E3-Gz7" secondAttribute="leading" id="WZy-dh-pPo"/>
+                <constraint firstItem="y7r-q5-urx" firstAttribute="top" secondItem="TkQ-E3-Gz7" secondAttribute="top" id="zt2-2s-YaH"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnChat" destination="6hP-Nj-zcR" id="VXV-Qg-M6j"/>
+                <outlet property="lblDistance" destination="uuk-fv-dca" id="Mh7-En-PYt"/>
+                <outlet property="lblName" destination="Cex-3g-tJC" id="kec-Uw-Mbj"/>
+                <outlet property="lblPrice" destination="qcf-3t-Mz5" id="JNg-G6-YQa"/>
+                <outlet property="lblRatingVw" destination="FbF-77-MD9" id="l4c-oN-Mgg"/>
+                <outlet property="userNameBtn" destination="8FU-X6-EDz" id="Xak-t0-Dg7"/>
+            </connections>
+            <point key="canvasLocation" x="-144" y="166"/>
+        </view>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kim Joy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3EF-FL-8VE">
+            <rect key="frame" x="0.0" y="0.0" width="58" height="22"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+        </label>
+    </objects>
+    <resources>
+        <image name="chat_but" width="85" height="60"/>
+        <image name="grey_star" width="25" height="25"/>
+        <image name="mapBackground" width="166" height="75"/>
+        <image name="yellow_star" width="25" height="25"/>
+    </resources>
+</document>

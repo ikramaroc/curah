@@ -1,0 +1,6 @@
+framework module Pods_Curah {
+  umbrella header "Pods-Curah-umbrella.h"
+
+  export *
+  module * { export * }
+}
